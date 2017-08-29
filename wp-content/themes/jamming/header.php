@@ -19,6 +19,7 @@
 
 	<?php wp_head(); ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/common.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/front.css">
 </head>
 
 <body <?php body_class(); ?>>

@@ -1,0 +1,66 @@
+// out: ../front.css, compress: true
+
+@import (reference) 'common';
+
+.hero {
+    //max-height: 80vh;
+    //padding-left: 50%;
+    padding: 25vh 0 5em;
+    font-size: 1.25em;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5), 1px 1px 5px rgba(0,0,0,.25);
+
+    &::before {
+        background-color: #000;
+        background-image: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,.75)), url('../../../uploads/2017/08/hero-guitar-player-bw.jpg');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+
+    h1 { line-height: 1.3em; }
+
+    @media screen and (min-width: 60em) {
+        h1, p { margin-left: 50%; }
+    }
+}
+
+.overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 6em;
+
+    h2 {
+        flex-basis: 100%;
+        margin-bottom: 1.5em;
+        font-size: 1.75em;
+        text-align: center;
+    }
+
+    section {
+        flex-basis: calc(~'50% - 1rem');
+        box-sizing: border-box;
+        padding: 2em;
+        background-color: #333;
+        text-align: center;
+    }
+}
+
+.about {
+    //display: flex;
+    //justify-content: space-between;
+    margin-top: 6em;
+    padding: 2em 0;
+    background-color: #333;
+
+    img {
+        //flex-shrink: 0;
+        float: left;
+        width: 300px;
+        height: 300px;
+        margin-right: 4rem;
+        border: 3px solid @theme-primary;
+    }
+
+    //p { display: inline-block; }
+}
